@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <litle>Pseudo Classes y Pseudo Elementos</litle>
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/flexboxgrid.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    </head>
+    <body class="container-fluid">
+        <nav class="row">
+            <h1>MENU MENU MENU MENU MENU</h1>
+        </nav>
+
+        <header class="row">
+            <h1>SLIDER SLIDER SLIDER SLIDER</h1>
+        </header>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 caja1">Caja 1<h1>:hover</h1><p>La pseudo-clase :hover de CSS coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).</p></div>
+            
+            <div class="col-md-3 col-sm-6 col-xs-12 caja2">Caja 2<h1>:active</h1><p>La pseudo-clase :active de CSS  representa un elemento (como un botón) que el usuario está activando.  Cuando se usa un mouse, la "activación" generalmente comienza cuando el usuario presiona el botón primario del mouse y termina cuando se suelta.
+                Ejemplo:
+            </p>
+            <a class="numero2" href="#">ACTIVAR</a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 caja3">Caja 3<h1>:checked</h1><div>
+                <input type="radio" name="my-input" id="yes">
+                <label for="yes">Yes</label>
+              
+                <input type="radio" name="my-input" id="no">
+                <label for="no">No</label>
+              </div>
+              
+              <div>
+                <input type="checkbox" name="my-checkbox" id="opt-in">
+                <label for="opt-in">Check me!</label>
+              </div>
+              
+              <select name="my-select" id="fruit">
+                <option value="opt1">Videos</option>
+                <option value="opt2">Fotos</option>
+                <option value="opt3">Diseños</option>
+              </select></div>
+                
+            <div class="col-md-3 col-sm-6 col-xs-12 caja4">Caja 4<h1>:default</h1><p>La pseudo-clase :default de CSS representa cualquier elemento de formulario que sea el predeterminado entre un grupo de elementos relacionados. Este selector se puede usar en los elementos <button><input type="checkbox"><input type="radio"></p></div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 caja5">Caja 5<h1>:dir()</h1><p>La pseudo-clase :dir de CSS coincide con los elementos en función de la direccionalidad del texto contenido en ellos.</p></div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja6">Caja 6<h1>:disabled</h1><p>La pseudo-clase :disabled de CSS representa a cualquier elemento deshabilitado. Un elemento se encuentra deshabilitado si no puede ser activado (por ejemplo ser selecionado, hacer click en él o aceptar texto de entrada) ni aceptar el foco. El elemento tiene además un estado habilitado en el cual puede ser activado o recibir foco.</p>
+                <input type="radio" name="season" id="summer" checked>
+                <label for="summer">ON</label><input type="radio" name="season" id="spring">
+                <label for="spring">OFF</label></div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 caja7">Caja 7<h1>:empy</h1><p>Representa cualquier elemento que no tenga hijos. Los hijos pueden ser nodos de elemento o texto (incluido el espacio en blanco). Los comentarios o las instrucciones de procesamiento no afectan si un elemento se considera vacío.</p>
+                <div class="box"><!-- Voy a ser de color lima. --></div>
+                <div class="box">Ejemplo Ejemplo Ejemplo</div>
+                <div class="box">
+                   <!-- Seré de color rosa debido a los espacios en blanco alrededor de este comentario. -->
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 caja8">Caja 8<h1>:enabled</h1><p>Representa cualquier elemento habilitado. Un elemento está habilitado si puede ser activado o si accepta el foco. El elemento también tiene un estado deshabilitado el en cuál, no puede ser activado ni acepta el foco.</p>
+                <form action="url_of_form">
+                <label for="FirstField">Primer campo (habilitado):</label>
+                <input type="text" id="FirstField" value="Lorem"><br>
+              
+                <label for="SecondField">Segundo campo (deshabilitado):</label>
+                <input type="text" id="SecondField" value="Ipsum" disabled="disabled"><br>
+              
+                <input type="button" value="Enviar">
+              </form></div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 caja9">Caja 9<h1>:first</h1><p>La pseudo-clase :first de CSS, utilizada con la regla-at @page, representa la primera página de un documento impreso.</p>
+                <p>Primera página.</p>
+                <p>Segunda página.</p>
+                <button>Imprimir!</button>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja10">Caja 10<h1>:first-child</h1><p>La pseudo-clase :first-child de CSS representa el primer elemento entre un grupo de elementos hermanos.</p>
+                <ul>
+                    <li>Objeto 1</li>
+                    <li>Objeto 2</li>
+                    <li>Objeto 3
+                      <ul>
+                        <li>Objeto 3.1</li>
+                        <li>Objeto 3.2</li>
+                        <li>Objeto 3.3</li>
+                      </ul>
+                    </li>
+                  </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 caja11">Caja 11<h1>:first-of-type</h1><p>La pseudo-clase :first-of-type de CSS representa el primer elemento de su tipo entre un grupo de elementos hermanos.</p>
+                <article>
+                    <div>!Este `div` es primero!</div>
+                    <div>¡Este <span>`span` anidado es el primero</span>!</div>
+                    <div>¡Este <em>`em` anidado es el primero</em>, pero este <em>`em` anidado es el último</em>!</div>
+                    <div>¡Este <span>`span` anidado tiene estilo</span>!</div>
+                    <b>¡Este `b` califica!</b>
+                    <div>Este es el `div` final.</div>
+                </article>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja12">Caja 12<h1>:fullscreen</h1><p>Representa un elemento que se muestra cuando el navegador está en modo de pantalla completa.</p>
+                <div id="fullscreen">
+                    <h3 class="numero12">Este texto se pondrá grande y rojo cuando el navegador esté en modo de pantalla completa.</h3>
+                    <button id="fullscreen-button">Entrar en pantalla completa</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 caja13">Caja 13<h1>:focus</h1><p>La pseudo-clase :focus CSS representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se activa cuando el usuario hace clic, toca un elemento o lo selecciona con la tecla "Tab" del teclado.</p>
+                <input class="red-input" value="Voy a ser de color rojo cuando enfoque."><br>
+                <input class="blue-input" value="Voy a ser de color azul cuando enfoque.">
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 caja14">Caja 14<h1>:indeterminate</h1><p>La pseudo-clase :indeterminate de CSS representa cualquier elemento de formulario cuyo estado sea indeterminado.</p>
+                <div>
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Esta etiqueta comienza con el color lima.</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="radio">
+                    <label for="radio">Esta etiqueta comienza con el color lima.</label>
+                  </div>
+                </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja15">Caja 15<h1>:in-range</h1><p>Representa un elemento <input> cuyo valor actual se encuentra dentro de los límites de rango especificados por los atributos min y max.</p>
+                <form action="" id="form1">
+                    <ul>Los valores entre 1 y 10 son válidos.
+                      <li>
+                        <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+                        <label for="value1">Tu valor esta </label>
+                      </li>
+                    </ul>
+                  </form>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja16">Caja 16<h1>:invalid</h1><p>La pseudo-clase :invalid de CSS representa cualquier elemento <input> u otro elemento <form> cuyos contenidos no se puedan validar.</p>
+                <form>
+                    <label for="url_input">Ingresa una URL:</label>
+                    <input type="url" id="url_input" />
+                    <br />
+                    <br />
+                    <label for="email_input">Introduzca una dirección de correo electrónico:</label>
+                    <input type="email" id="email_input" required/>
+                  </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 caja17">Caja 17<h1>:lang()</h1><p>La pseudo-clase :lang() de CSS es utilizada para modificar elementos en función del idioma en el que se determina que están.</p>
+                <div lang="en"><q>Esta cita en inglés tiene una cita <q>anidada</q> adentro.</q></div>
+                <div lang="fr"><q>Esta cita en francés tiene una cita <q>anidada</q> adentro.</q></div>
+                <div lang="de"><q>Esta cita en aleman tiene una cita <q>anidada</q> adentro.</q></div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 caja18">Caja 18<h1>:last-child</h1><p>Representa el último elemento entre un grupo de elementos hermanos.</p>
+                <div>
+                    <p class="p18">Este texto no está seleccionado.</p18>
+                    <p class="p18">¡Este texto está seleccionado!</p18>
+                  </div>
+                  
+                  <div>
+                    <p18>Este texto no está seleccionado.</p18>
+                    <h2>Este texto no está seleccionado: no es un `p`.</h2>
+                  </div>
+                </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 caja19">Caja 19<h1>:last-of-type</h1><p>La pseudo-class :last-of-type de CSS representa el último elemento de su tipo entre un grupo de elementos hermanos.</p>
+                <h2>Título</h2>
+                <p class="p19">Párrafo 1</p>
+                <p class="p19">Párrafo 2</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja20">Caja 20<h1>:left</h1><p>La :left CSS pseudo-clase, utilizada con la regla @page at, representa todas las páginas de la izquierda de un documento impreso.</p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 caja21">Caja 21<h1>:link</h1><p>La pseudo-clase :link CSS representa un elemento que aún no se ha visitado. Coincide con cada elemento no visitado <a>, <area>, o <link> que tiene un atributo href.</p>
+                <a class="numero21" href="#ordinary-target">Este es un enlace ordinario.</a><br>
+                <a class="numero21" href="">Ya has visitado este enlace.</a><br>
+                <a>Enlace de marcador de posición (no se personalizará)</a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja22">Caja 22<h1>:not()</h1><p>La pseudoclase :not() de CSS representa elementos que no coinciden con una lista de selectores. Como evita que se seleccionen elementos específicos, se lo conoce como la pseudoclase de negación.</p>
+                <p class="numero22">Soy un párrafo.</p>
+                <p class="fancy">¡Soy muy elegante!</p>
+                <div>NO soy un párrafo.</div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 caja23">Caja 23<h1>:nth-child()</h1><p>Coincide con uno o más elementos en función de su posición entre un grupo de hermanos.</p>
+                <h3><code>span:nth-of-type(2n+1)</code>, con un<code>&lt;em&gt;</code> entre los hijos.</h3>
+                     <p>Los hijos 1 y 4 son seleccionados.<br>
+                 <div class="third">
+                   <span class="numero23">1</span>
+                   <span class="numero23">2</span>
+                   <em class="numero23">3</em>
+                   <span class="numero23">4</span>
+                 </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja24">Caja 24<h1>:nth-last-child</h1><p>La pseudo-clase :nth-last-child() de CSS selecciona uno o más elementos en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+                <table>
+                    <tbody>
+                      <tr>
+                        <td>Primera línea</td>
+                      </tr>
+                      <tr>
+                        <td>Segunda línea</td>
+                      </tr>
+                      <tr>
+                        <td>Tercera línea</td>
+                      </tr>
+                      <tr>
+                        <td>Cuarta línea</td>
+                      </tr>
+                      <tr>
+                        <td>Quinta línea</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 caja25">Caja 25<h1>:nth-last-of-type()</h1><p<>La pseudo-clase :nth-last-of-type() CSS coincide con uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+                <div>
+                    <span class="numero25">Span.</span>
+                    <span class="numero25">span.</span>
+                    <em class="numero25">Esto esta enfatizado.</em>
+                    <span class="numero25">¡Guauu, este span se pone color lima!</span>
+                    <strike>Esto está tachado.</strike>
+                    <span class="numero25">Aquí hay un último span.</span>
+                  </div>
+                </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja26">Caja 26<h1>:nyh-of-type()</h1><p>Selecciona uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos.</p>
+                <div>
+                    <div>Este elemento no se cuenta.</div>
+                    <p class="numero26">1er párrafo.</p>
+                    <p class="numero26">2do párrafo.</p>
+                    <div>Este elemento no se cuenta.</div>
+                    <p class="numero26">3er párrafo.</p>
+                    <p class="numero26">4to párrafo.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja27">Caja 27<h1>:only-child</h1><p>Representa un elemento sin hermanos. Esto es lo mismo que :first-child:last-child o :nth-child(1):nth-last-child(1), pero con una especificidad menor.</p>
+                <main>
+                    <div>
+                      <i>Soy un hijo único y solitario.</i>
+                    </div>
+                  
+                    <div>
+                      <i>Yo tengo hermanos.</i><br>
+                      <b>¡Yo también!</b><br>
+                      <span>Yo también tengo hermanos, <span>pero este es un hijo único.</span></span>
+                    </div>
+                  </main>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja28">Caja 28<h1>:only-of-type</h1><p>Representa un elemento que no tiene hermanos del mismo tipo.</p>
+                <main>
+                    <div>Soy un `div` #1.</div>
+                    <p class="numero28">Yo soy el único `p` entre mis hermanos.</p>
+                    <div>Soy un `d
+                        iv` #2.</div>
+                    <div>Soy un `div` #3.
+                      <i class="numero28">Yo soy el único hijo `i`.</i>
+                      <em>Soy un `em` #1.</em>
+                      <em>Soy un `em` #2.</em>
+                    </div>
+                  </main></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 caja29">Caja 29<h1>:optional</h1><p>Representa cualquier elemento que no tenga el atributo required establecido en él.</p>
+                <form class="numero29">
+                    <label for="url_input29">Ingresa una URL:</label>
+                    <input class="input29" type="url" id="url_input" />
+                    <br />
+                    <br />
+                    <label for="email_input">Introduzca una dirección de correo electrónico:</label>
+                    <input class="input29" type="email" id="email_input" required/>
+                  </form>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 caja30">Caja 30<h1>:out-of-range</h1><p>Representa un elemento <input> cuyo valor actual está fuera de los límites de rango especificados por los atributos min y max.</p>
+                <form action="" id="form1">
+                    <ul>Los valores entre 1 y 10 son válidos.
+                      <li>
+                        <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+                        <label for="value1">Tu valor esta </label>
+                      </li>
+                    </ul>
+                  </form>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 caja31">Caja 31<h1>:read-only</h1><p>Representa un elemento que ya no es editable por el usuario (como un input).</p>
+                <input class="numero31" type="text" value="Aquí puedes poner lo que quieras.">
+                <input class="numero31" type="text" value="Campo de solo lectura." readonly>
+                <p class="text31">Este es un párrafo normal.</p>
+                <p class="text31" contenteditable="true">Puedes editar este párrafo, ¡inténtalo!</p>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 caja32">Caja 32<h1>:read-write</h1><p>Representa un elemento (como un input) que es editable por el usuario.</p>
+                <input class="numero32" type="text" value="Escribe lo que quieras aquí.">
+                <input class="numero32" type="text" value="Este es un campo de solo lectura." readonly>
+                <p class="text32">Este es un párrafo normal.</p>
+                <p class="text32" contenteditable="true">¡Puedes editar este párrafo!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 caja33">Caja 33<h1>:requiered</h1><p>Representa cualquier elemento <input> que tenga el atributo required establecido en él.</p>
+                <form class="numero33">
+                    <label for="url_input33">Ingresa una URL:</label>
+                    <input class="input33" type="url" id="url_input" />
+                    <br />
+                    <br />
+                    <label for="email_input">Introduzca una dirección de correo electrónico:</label>
+                    <input class="input33" type="email" id="email_input" required/>
+                  </form>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja34">Caja 34<h1>:right</h1><p>Utilizada con la regla-at @page, representa todas las páginas de la derecha de un documento impreso.</p></div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja35">Caja 35<h1>:root</h1><p>selecciona el elemento raíz de un árbol que representa el documento. En HTML, :root representa el elemento <html> y es idéntico al selector html, excepto que su especificidad es mayor.</p></div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja36">Caja 36<h1>:scope</h1><p>Representa elementos que son un punto de referencia para los selectores para que coincida en contra.:scope</p>
+                <p id="para">
+                    This is a paragraph. It is not an interesting paragraph. Sorry about that.
+                  </p>
+                  <p id="output"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 caja37">Caja 37<h1>:target</h1><p>Representa un elemento único con un id que coincide con el fragmento de la URL.</p>
+                <ol>
+                 <li><a href="#p1">¡Salta al primer párrafo!</a></li>
+                 <li><a href="#nowhere">Este enlace no va a ninguna parte,mporque el objetivo no existe.</a></li>
+                </ol>
+                
+                <h>Parrafos</h4>
+                <p class="numero37" id="p1">Este es un párrafo</i> utilizando un fragmento de URL.</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja38">Caja 38<h1>:valid</h1><p>Representa cualquier elemento <input> cuyo contenido se valide satisfactoriamente. Esto permite ayudar al usuario a confirmar que sus datos están correctamente.</p>
+                <form class="numero38">
+                    <label for="url_input38">Ingresa una URL:</label>
+                    <input class="input38" type="url" id="url_input" />
+                    <br />
+                    <br />
+                    <label for="email_input">Correo electrónico:</label>
+                    <input class="input38" type="email" id="email_input" required/>
+                </form>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 caja39">Caja 39<h1>:visited</h1><p>Representa enlaces que el usuario ya ha visitado. Por motivos de privacidad, los estilos que se pueden modificar con este selector son muy limitados.</p>
+                <a class="numero39" href="#test-visited-link">¿Ya has visitado este enlace?</a><br>
+                <a class="numero39" href="">Ya has visitado este enlace.</a>
+            </div>
+        </div>
+    </body>
+
+</html>

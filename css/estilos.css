@@ -1,0 +1,620 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+}
+nav{
+    background-color: #c69c6d;
+    height: 3rem;
+}
+header{
+    background-color: #3fa9f5;
+    height: 15rem;
+}
+.caja1{
+    background-color: #39b54a;
+    height: 20rem;
+}
+.caja2{
+    background-color: #8cc63f;
+    height: 20rem;
+}
+.caja3{
+    background-color: #d9e021;
+    height: 20rem;
+}
+.caja4{
+    background-color: #fcee21;
+    height: 20rem;
+}
+.caja5{
+    background-color: #fbb03b;
+    height: 20rem;
+}
+.caja6{
+    background-color: #f7931e;
+    height: 20rem;
+}
+.caja7{
+    background-color: #f15a24;
+    height: 20rem;
+}
+.caja8{
+    background-color: #c1272d;
+    height: 20rem;
+}
+.caja9{
+    background-color: #319b8c;
+    height: 20rem;
+}
+.caja10{
+    background-color: #1368e5;
+    height: 20rem;
+}
+.caja11{
+    background-color: #ac13e5;
+    height: 20rem;
+}
+.caja12{
+    background-color: #ff83dc;
+    height: 20rem;
+}
+.caja13{
+    background-color: #9ff21d;
+    height: 20rem;
+}
+.caja14{
+    background-color: #ce0067;
+    height: 20rem;
+}
+.caja15{
+    background-color: #045648;
+    height: 20rem;
+}
+.caja16{
+    background-color: #ea5757;
+    height: 20rem;
+}
+.caja17{
+    background-color: #57eaa1;
+    height: 20rem;
+}
+.caja18{
+    background-color: #8cc63f;
+    height: 20rem;
+}
+.caja19{
+    background-color: #ba620c;
+    height: 20rem;
+}
+.caja20{
+    background-color: #360cba;
+    height: 20rem;
+}
+.caja21{
+    background-color: #8a9b83;
+    height: 20rem;
+}
+.caja22{
+    background-color: #408e20;
+    height: 20rem;
+}
+.caja23{
+    background-color: #2b2be0;
+    height: 20rem;
+}
+.caja24{
+    background-color: #c4a300;
+    height: 20rem;
+}
+.caja25{
+    background-color: #ce0067;
+    height: 20rem;
+}
+.caja26{
+    background-color: #68ea8a;
+    height: 20rem;
+}
+.caja27{
+    background-color: #ac13e5;
+    height: 20rem;
+}
+.caja28{
+    background-color: #ea5757;
+    height: 20rem;
+}
+.caja29{
+    background-color: #319b8c;
+    height: 20rem;
+}
+.caja30{
+    background-color: #c1b05d;
+    height: 20rem;
+}
+.caja31{
+    background-color: #fcee21;
+    height: 20rem;
+}
+.caja32{
+    background-color: #f15a24;
+    height: 20rem;
+}
+.caja33{
+    background-color: #68ea8a;
+    height: 20rem;
+}
+.caja34{
+    background-color: #8cc63f;
+    height: 20rem;
+}
+.caja35{
+    background-color: #c1272d;
+    height: 20rem;
+}
+.caja36{
+    background-color: #ac13e5;
+    height: 20rem;
+}
+.caja37{
+    background-color: #ce0067;
+    height: 20rem;
+}
+.caja38{
+    background-color: #ea5757;
+    height: 20rem;
+}
+.caja39{
+    background-color: #319b8c;
+    height: 20rem;
+}
+
+
+
+div.caja1:hover {
+    background-color: #77cced;
+    color: white;
+}
+
+.numero2:active {
+    color: red;
+}
+
+:checked {
+    margin-left: 25px;
+    border: 1px solid blue;
+}
+
+div.caja4:default{
+    background-color: lime;
+}
+div.caja4:default{
+    box-shadow: 0 0 2px 1px coral;
+}
+  
+div.caja4.default + label{
+    color: coral;
+}
+
+div.caja5:dir(rtl){
+    background-color: red;
+}
+
+input:disabled{
+    background: #ccc;
+}
+
+div:empty {
+    background: lime;
+}
+.box{
+    background: pink;
+    height: 30px;
+    width: 80px;
+}
+  
+.box:empty {
+    background: lime;
+}
+
+input:enabled {
+    color: blue;
+}
+
+input:enabled {
+    color: #2b2;
+}
+  
+input:disabled {
+    color: #aaa;
+}
+
+@page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+}
+@page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+  }
+  
+p {
+    page-break-after: always;
+}
+
+ul li {
+    color: blue;
+}
+  
+ul li:first-child {
+    color: red;
+    font-weight: bold;
+}
+
+article :first-of-type {
+    background-color: pink;
+}
+
+/* Selecciona cualquier <div> que se muestre en modo de pantalla completa */
+/* Implementado en Firefox, WebKit/Chrome, y Edge/IE usando prefijos;
+   Edge también es compatible con la versión sin prefijo */
+.numero12:-moz-full-screen {
+    background-color: pink;
+}
+  
+.numero12:-webkit-full-screen {
+    background-color: pink;
+}
+  
+#fullscreen:fullscreen {
+    padding: 42px;
+    background-color: pink;
+    border:2px solid #f00;
+    font-size: 200%;
+}
+  
+#fullscreen:fullscreen > h1 {
+    color: red;
+}
+  
+#fullscreen:fullscreen > p {
+    color: darkred;
+}
+  
+#fullscreen:fullscreen > button {
+    display: none;
+}
+
+.red-input:focus {
+    background: yellow;
+    color: red;
+}
+  
+.blue-input:focus {
+    background: yellow;
+    color: blue;
+}
+
+input:indeterminate + label {
+    background: lime;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+  
+input {
+    border: 1px solid black;
+}
+  
+input:in-range {
+    background-color: rgba(0, 255, 0, 0.25);
+}
+  
+input:out-of-range {
+    background-color: rgba(255, 0, 0, 0.25);
+    border: 2px solid red;
+}
+  
+input:in-range + label::after {
+    content: 'bien.';
+}
+  
+input:out-of-range + label::after {
+    content: 'fuera de rango!';
+}
+
+input:invalid {
+    background-color: #ffdddd;
+}
+  
+form:invalid {
+    border: 5px solid #ffdddd;
+}
+
+input:valid {
+    background-color: #ddffdd;
+}
+  
+form:valid {
+    border: 5px solid #ddffdd;
+}
+  
+input:required {
+    border-color: #800000;
+    border-width: 3px;
+}
+  
+input:required:invalid {
+    border-color: #C00000;
+}
+
+:lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+:lang(fr) > q { quotes: '« ' ' »'; }
+:lang(de) > q { quotes: '»' '«' '\2039' '\203A'; }
+
+.p18:last-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+}
+
+.p19:last-of-type {
+    color: red;
+    font-style: italic;
+}
+
+/* Selects any left-hand pages when printing */
+@page :left {
+    margin: 2in 3in;
+}
+
+.numero21:link {
+    background-color: gold;
+    color: green;
+}
+
+.fancy {
+    text-shadow: 2px 2px 3px gold;
+}
+  
+  /* elementos <p> que no están en la clase `.fancy` */
+.numero22:not(.fancy) {
+    color: green;
+}
+  
+  /* Elementos que no son elementos <p> */
+.numero22:not(p) {
+    text-decoration: underline;
+}
+  
+  /* Elementos que no son elementos <div> o <span> */
+.numero22:not(div):not(span) {
+    font-weight: bold;
+}
+  
+  /* Elementos que no son `.crazy` o `.fancy` */
+  /* Tenga en cuenta que esta sintaxis aún no está bien soportada. */
+.numero22:not(.crazy, .fancy) {
+    font-family: sans-serif;
+}
+
+html {
+    font-family: sans-serif;
+  }
+  
+.numero23,div em {
+    padding: 5px;
+    border: 1px solid green;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+  
+  .first span:nth-child(2n+1),
+  .second span:nth-child(2n+1),
+  .third span:nth-of-type(2n+1) {
+    background-color: lime;
+  }
+
+  table {
+    border: 1px solid blue;
+  }
+  
+  /* Selecciona los últimos tres elementos */
+  tr:nth-last-child(-n+3) {
+    background-color: pink;
+  }
+
+/* Párrafos impares */
+.numero26:nth-of-type(2n+1) {
+    color: red;
+  }
+  
+  /* Párrafos pares */
+.numero26:nth-of-type(2n) {
+    color: blue;
+  }
+  
+  /* Primer párrafo */
+.numero26:nth-of-type(1) {
+    font-weight: bold;
+}
+
+main :only-child {
+    color: red;
+}
+ 
+  /* Toma todos los elementos a partir del penúltimo elemento */
+tr:nth-last-child(n+2) {
+    color: blue;
+  }
+  
+  /* Seleccione solo el penúltimo elemento */
+tr:nth-last-child(2) {
+    font-weight: 600;
+  }
+
+span:nth-last-of-type(2) {
+    background-color: lime;
+}
+
+.numero28:only-of-type {
+    color: red;
+}
+
+.input29:invalid {
+    background-color: #ffdddd;
+  }
+  
+.numero29:invalid {
+    border: 5px solid #ffdddd;
+  }
+  
+.input29:valid {
+    background-color: #ddffdd;
+  }
+  
+form:valid {
+    border: 5px solid #ddffdd;
+  }
+  
+.input29:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+  
+input:required:invalid {
+    border-color: #C00000;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+  
+input {
+    border: 1px solid black;
+}
+  
+input:in-range {
+    background-color: rgba(0, 255, 0, 0.25);
+}
+  
+input:out-of-range {
+    background-color: rgba(255, 0, 0, 0.25);
+    border: 2px solid red;
+}
+  
+input:in-range + label::after {
+    content: 'bien.';
+}
+
+.numero31 { min-width: 20em; }
+.numero31:-moz-read-only { background: cyan; }
+.numero31:read-only { background: cyan; }
+
+.text31:-moz-read-only { background: lightgray; }
+.text31:read-only { background: lightgray; }
+.text31[contenteditable="true"] { color: blue; }
+  
+.numero32:out-of-range + label::after {
+    content: '¡fuera de rango!';
+}
+
+.numero32 { min-width: 20em; }
+.numero32:-moz-read-write { background: cyan; }
+.numero32:read-write { background: cyan; }
+
+.text32:-moz-read-write { background: lightgray; }
+.text32:read-write { background: lightgray; }
+.text32[contenteditable="true"] { color: blue; }
+
+.input33:invalid {
+    background-color: #ffdddd;
+  }
+  
+.numero33:invalid {
+    border: 5px solid #ffdddd;
+  }
+  
+.input33:valid {
+    background-color: #ddffdd;
+  }
+  
+form:valid {
+    border: 5px solid #ddffdd;
+  }
+  
+.input33:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+  
+input:required:invalid {
+    border-color: #C00000;
+}
+
+@page :right {
+    margin: 2in 3in;
+}
+
+:root {
+    --main-color: hotpink;
+    --pane-padding: 5px 42px;
+}
+
+.numero37:target {
+    background-color: gold;
+  }
+  
+  /* Agrega un pseudo-elemento dentro del elemento de destino */
+.numero37:target::before {
+    font: 70% sans-serif;
+    content: "►";
+    color: limegreen;
+    margin-right: .25em;
+}
+  
+  /* Estilo de elementos en cursiva dentro del elemento de destino */
+.numero37:target i {
+    color: red;
+}
+
+.input38:invalid {
+    background-color: #ffdddd;
+  }
+  
+.numero38:invalid {
+    border: 5px solid #ffdddd;
+  }
+  
+.input38:valid {
+    background-color: #ddffdd;
+  }
+  
+.numero38:valid {
+    border: 5px solid #ddffdd;
+  }
+  
+.input38:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+  
+input:required:invalid {
+    border-color: #C00000;
+}
+
+.numero39 {
+    /* Especifique los valores predeterminados no transparentes a ciertas propiedades,
+       lo que les permite ser diseñado con el estado :visited */
+    background-color: white;
+    border: 1px solid white;
+}
+.numero39:visited {
+    background-color: yellow;
+    border-color: hotpink;
+    color: hotpink;
+  }
